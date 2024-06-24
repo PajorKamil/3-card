@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+/* 
+
+font-family: "Big Shoulders Display", sans-serif; 
+font-family: "Lexend Deca", sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100svw;
+    height: 99.9svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65em;
+    height: 35em;
+}
+
+.sedans {
+    border-radius: 1em 0em 0em 1em;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.luxury {
+    border-radius: 0em 1em 1em 0em;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.sedans > a {
+    color: hsl(31, 77%, 52%);
+} 
+
+.suvs > a {
+    color: hsl(179, 100%, 13%);
+} 
+
+.luxury > a {
+    color: hsl(184, 100%, 22%);
+} 
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 3em;
+    width: calc(100% - 6em);
+    height: calc(100% - 6em);
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sedans > p:nth-of-type(1),
+.suvs > p:nth-of-type(1),
+.luxury > p:nth-of-type(1) {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+
+}
+
+.sedans > p:nth-of-type(2),
+.suvs > p:nth-of-type(2),
+.luxury > p:nth-of-type(2) {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5em;
+    width: 15em;
+}
+
+a {
+    background-color: aliceblue;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2em;
+    font-family: "Lexend Deca", sans-serif;
+    border: 2px solid white;
+}
+
+a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 1050px) {
+    .sedans > p:nth-of-type(2),
+    .suvs > p:nth-of-type(2),
+    .luxury > p:nth-of-type(2) {
+    width: 10em;
+}
+
+.container {
+    width: 60em;
+    height: 100%;
+}
+}
+
+
+@media screen and (max-width: 975px) {
+.container {
+    flex-direction: column;
+    width: 20em;
+    height: 90%;
+}
+
+.sedans {
+    border-radius: 1em 1em 0em 0em;
+}
+
+.luxury {
+    border-radius: 0em 0em 1em 1em;
+}
+
+img {
+    width: 3em;
+}
+
+.sedans > p:nth-of-type(1),
+.suvs > p:nth-of-type(1),
+.luxury > p:nth-of-type(1) {
+    font-size: 1.5em;
+
+}
+
+.sedans > p:nth-of-type(2),
+.suvs > p:nth-of-type(2),
+.luxury > p:nth-of-type(2) {
+    font-size: .8em;
+    width: 17em;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 1em 2em
+}
+
+a {
+    padding: .5em 1em;
+}
+}
